@@ -7,5 +7,9 @@ def obtener_tipo(extension) :
     tipos = {
         '.pdf' : 'PDFs',
         '.jpg' : 'Imagenes',
-        '.jpeg' : 'Imagenes'
+        '.jpeg' : 'Imagenes',
+        '.xlsx' : 'Excel',
+        '.txt' : 'Textos',
+        '.docx' : 'Word',
     }
+    return tipos.get(extension.lower(), 'Otros')
